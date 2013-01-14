@@ -346,6 +346,12 @@ body #wrapper #contact h4:hover {
 body #wrapper #contact h4 span {
   display: none;
 }
+
+#who h3 a {
+  color: #231f20;
+  text-decoration: none;
+}
+
 body #wrapper #contact a {
   font-family: PlutoSansBold, sans-serif;
   font-size: 15px;
@@ -353,6 +359,6 @@ body #wrapper #contact a {
   color: #231f20;
   text-decoration: none;
 }
-body #wrapper #contact a:hover {
+body #wrapper #contact a:hover, #who h3 a {
   border-bottom: 1px solid #231f20;
 }
