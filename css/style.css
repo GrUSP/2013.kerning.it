@@ -171,6 +171,9 @@ body:after {
   src: url('webfonts/242051_1_0.eot');
   src: url('webfonts/242051_1_0.eot?#iefix') format('embedded-opentype'), url('webfonts/242051_1_0.woff') format('woff'), url('webfonts/242051_1_0.ttf') format('truetype');
 }
+* {
+  box-sizing: border-box;
+}
 b {
   font-family: PlutoSansBold, sans-serif;
   font-size: 1em;
@@ -180,185 +183,887 @@ hr {
   margin: 50px auto 48px auto;
   width: 62px;
   border: 0;
-  border-top: 1px solid red;
+  border-top: 1px solid #ffffff;
 }
-body {
-  position: relative;
-  padding-bottom: 64px;
-  background: url('../img/bghtml.gif') left top no-repeat;
-  min-height: 100%;
+h2 {
+  color: #e34e35;
   font-family: PlutoSansLight, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
-  text-rendering: optimizeLegibility;
+  font-size: 21px;
   text-transform: uppercase;
-  background: #f8f7f4;
+  padding-bottom: 10px;
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 30px 0;
+  letter-spacing: 1px;
 }
-body:after {
-  content: " ";
-  position: absolute;
-  width: 168px;
-  border-bottom: 5px solid #ed513b;
-  bottom: 0;
-  left: 50%;
-  margin: 0 0 0 -84px;
-}
-body #wrapper {
-  width: 743px;
+body {
   margin: 0 auto;
+  border: 10px solid #f8f7f4;
+  max-width: 1400px;
+  text-rendering: optimizeLegibility;
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  background: #f8f7f4;
   text-align: center;
 }
-body #wrapper #opening {
+body .grid {
+  max-width: 1040;
+  margin: 0 auto;
+  width: 90%;
+}
+.section {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  position: relative;
+  min-height: 200px;
+}
+.section:after {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  height: auto;
+  content: '';
+  left: 0;
+  right: 0;
+}
+#opening {
+  background-color: #e34e35;
+}
+#opening:after {
+  bottom: -60px;
+  min-height: 60px;
+  background: url("../img/bg-opening.png") center left no-repeat;
+  background-size: cover;
+}
+#calling {
+  background-color: #302c2d;
+  padding: 80px 0 30px 0;
+}
+#calling h2 {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  background: none;
+  margin: 0 0 20px 0;
+}
+#calling:after {
+  bottom: -24px;
+  min-height: 24px;
+  background: url("../img/bg-ml.png") center left no-repeat;
+}
+#speakers {
+  background-color: #f8f7f4;
+  padding: 40px 0 0 0;
+}
+#speakers:after {
+  bottom: -115px;
+  min-height: 115px;
+  background: url("../img/bg-speakers.png") center left no-repeat;
+  background-size: 100% 100%;
+}
+#speakers .more {
+  color: #4c4345;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#location {
+  padding: 100px 0 70px 0;
+  background-color: #efeeeb;
+  background: url("../img/bg-location.jpg") center center no-repeat;
+  background-size: cover;
+}
+#location:after {
+  bottom: -24px;
+  min-height: 24px;
+  background-size: 100% 100%;
+}
+#venue {
+  padding: 0 0 30px 0;
+  background-color: #f8f7f4;
+}
+#venue:after {
+  top: -69px;
+  min-height: 69px;
+  background: url("../img/bg-venue.png") center left no-repeat;
+  background-size: 100% 100%;
+}
+#tickets {
+  padding: 20px 0;
+  min-height: 200px;
+  background-color: #e34e35;
+}
+#tickets h2 {
+  color: #ffffff;
+}
+#tickets:after {
+  bottom: -60px;
+  min-height: 60px;
+  background: url("../img/bg-opening.png") center left no-repeat;
+  background-size: 100% 100%;
+}
+#tickets:before {
+  top: -36px;
+  min-height: 36px;
+  background: url("../img/bg-tickets.png") center left no-repeat;
+  background-size: 100% 100%;
+}
+#tickets #eventbrite-link {
+  display: inline-block;
+  background: #f8f7f4;
+  padding: 10px 20px;
+  color: #302c2d;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+#tickets #eventbrite-link:hover {
+  background: #302c2d;
+  color: #f8f7f4;
+}
+#tickets #eventbrite-iframe {
+  display: none;
+}
+#sponsors {
+  padding: 60px 0 30px 0;
+  min-height: 200px;
+  background-color: #e5e3de;
+}
+#sponsors:after {
+  bottom: -43px;
+  min-height: 43px;
+  background: url("../img/bg-sponsor.png") left no-repeat;
+  background-size: 100% 100%;
+}
+#sponsors a {
+  display: inline-block;
+  background: #302c2d;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+#sponsors a:hover {
+  background: #e34e35;
+}
+#contact {
+  padding: 60px 0 30px 0;
+  min-height: 200px;
+  background-color: #302c2d;
+  font-size: 13px;
+}
+#contact h2 {
+  color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 20;
+  margin: 0 0 20px 0;
+}
+#contact h3 {
+  color: #e34e35;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5em;
+  margin: 0 0 20px 0;
+}
+#contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+#contact .social a {
+  display: block;
+}
+#contact li {
+  margin: 0 0 20px 0;
+}
+#ribbon {
   margin: 0 auto;
   width: 168px;
   height: 156px;
-  background: #ffffff;
-  border-top: 5px solid #ed513b;
-  border-left: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
+  background: #f8f7f4;
 }
-body #wrapper #opening span {
+#ribbon span {
   display: block;
   width: 62px;
+  text-transform: uppercase;
 }
-body #wrapper #opening span#where {
+#ribbon span#where {
   margin: auto;
   padding: 26px 0 10px 0;
   font-family: PlutoSansBold, sans-serif;
   font-size: 14px;
   line-height: 1em;
-  border-bottom: 1px solid #ed513b;
+  border-bottom: 1px solid #e34e35;
   text-align: center;
 }
-body #wrapper #opening span#where i {
+#ribbon span#where i {
   font-family: PlutoSansLight, sans-serif;
   font-size: 16px;
   line-height: 1em;
   display: block;
   letter-spacing: 3px;
 }
-body #wrapper #opening span#season {
+#ribbon span#season {
   margin: auto;
   padding: 10px 0 0px 0;
   font-family: PlutoSansBold, sans-serif;
   font-size: 14px;
   line-height: 24px;
 }
-body #wrapper #opening span#year {
+#ribbon span#year {
   margin: auto;
   padding: 0px 0 13px 0;
   font-family: PlutoSansBold, sans-serif;
   font-size: 25px;
   line-height: 25px;
 }
-body #wrapper #what {
-  padding: 63px 0 0;
+#what {
+  padding: 30px 0 0 0 ;
 }
-body #wrapper #what h1 {
+#what h1 {
   margin: auto;
   display: block;
-  width: 741px;
+  width: 100%;
+  max-height: 113px;
   height: 113px;
-  background: url('../img/logo_ke.png') center center no-repeat;
+  background: url('../img/logo_ke.png') center bottom no-repeat;
+  background-size: contain;
 }
-body #wrapper #what h1 span {
+#what h1 span {
   display: none;
 }
-body #wrapper #what h2 {
+#what h2 {
   padding-top: 20px;
   font-family: PlutoSansLight, sans-serif;
-  font-size: 27px;
+  font-size: 16px;
   line-height: 1em;
+  color: #ffffff;
   letter-spacing: 1px;
-  white-space: nowrap;
+  text-transform: uppercase;
 }
-body #wrapper #what h2 b {
-  color: #ed513b;
+#what h2 b {
+  color: #231f20;
+  font-size: 16px;
+  line-height: 16px;
 }
-body #wrapper #who h3 {
-  padding-top: 12px;
-  padding-bottom: 28px;
+#what .short {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  color: #ffffff;
+  text-transform: none;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+#what .abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  padding: 30px 0;
+}
+#what .abstract p.col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
   font-family: PlutoSansLight, sans-serif;
-  font-size: 25px;
-  line-height: 1em;
+  font-size: 14px;
+  line-height: 1.5em;
+  text-align: left;
+  text-transform: none;
 }
-body #wrapper #who #subscription-box {
-  position: relative;
-  margin: auto;
-  border: 1px solid #e5e5e5;
-  background: #ffffff;
-  padding: 9px;
-  height: 43px;
-  width: 534px;
+#speakers-list {
+  width: 90%;
+  max-width: 900px;
+  text-align: center;
+  margin: 0 auto;
 }
-body #wrapper #who #subscription-box input {
+#speakers-list li {
+  max-width: 284px;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 0 10px;
+}
+#speakers-list img {
+  width: 100%;
+  display: block;
+  margin: 0 0 20px 0;
+}
+#speakers-list span {
+  display: block;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 16px;
+  color: #231f20;
+  padding-bottom: 10px;
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 30px 0;
+}
+#location-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#location-abstract .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  font-size: 14px;
+}
+#location-abstract .intro {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 21px;
+  color: #231f20;
+  padding: 0 0 30px 0;
+}
+#location-abstract .intro b {
+  font-family: "adelle", serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#venue-abstract {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+}
+#venue-abstract .col {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  text-align: left;
+  margin: 0 0 20px 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+#venue-abstract .col a {
+  color: #e34e35;
+  text-decoration: none;
+}
+#venue-abstract .col:first-child {
+  text-align: center;
+}
+#venue-abstract .col:last-child {
+  float: right;
+}
+#venue-abstract .col h3 {
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+#venue-abstract .col h3 b {
+  font-family: "adelle", serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#venue-abstract .col dl dt {
+  color: #e34e35;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#venue-abstract .col dl dd {
+  margin-bottom: 20px;
+}
+#subscription-box {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  border: 8px solid #272424;
+  height: 59px;
+}
+#subscription-box input {
   -webkit-appearance: none;
   border-radius: 0;
 }
-body #wrapper #who #subscription-box input[type=email] {
+#subscription-box input[type=email] {
+  display: inline;
+  float: left;
+  width: 66.66666666666666%;
+  margin: 0 ;
   box-shadow: inset 0px 2px 5px #e5e5e5;
   font-family: PlutoSansLight, sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   line-height: 1.5em;
-  left: 9px;
-  position: absolute;
-  width: 400px;
-  height: 41px;
+  height: 43px;
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  background: #ffffff;
   margin: 0;
   padding: 0px 0px 0px 10px;
   border: 1px solid #cccccc;
 }
-body #wrapper #who #subscription-box input[type=email]:focus {
-  border: 1px solid #ed513b;
+#subscription-box input[type=email]:focus {
+  border: 1px solid #e34e35;
   outline: none;
 }
-body #wrapper #who #subscription-box input[type=submit] {
-  left: 411px;
-  position: absolute;
+#subscription-box input[type=submit] {
+  display: inline;
+  float: left;
+  width: 33.33333333333333%;
+  margin: 0 ;
+  display: inline-block;
   font-family: PlutoSansBold, sans-serif;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 1.5em;
   background: #c6301a;
   color: #ffffff;
   margin: 0;
   padding: 0 5px;
   border: 0;
-  width: 130px;
   height: 43px;
   border: 1px solid #c6301a;
   text-transform: uppercase;
 }
-body #wrapper #contact {
-  margin-bottom: 64px;
+@media screen and (min-width: 481px) {
+  #what .short {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 ;
+    text-align: center;
+    margin-left: 16.666666666666664%;
+  }
+  #what .abstract p.col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 0%;
+    padding: 0 5px;
+  }
+  #subscription-box {
+    display: inline;
+    float: left;
+    width: 83.33333333333334%;
+    margin: 0 ;
+    margin-left: 8.333333333333332%;
+  }
+  #subscription-box input[type=email] {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+  #speakers-list li {
+    padding: 0 20px;
+  }
+  #location-abstract {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 ;
+    margin-left: 16.666666666666664%;
+  }
+  #location-abstract .col {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #venue-abstract .col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    margin: 0 0 20px 0;
+  }
+  #venue-abstract .col:first-child {
+    text-align: center;
+  }
+  #venue-abstract .col:first-child img {
+    width: 100%;
+  }
+  #tickets #eventbrite-link {
+    display: none;
+  }
+  #tickets #eventbrite-iframe {
+    display: block;
+  }
+  #contact .col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    text-align: left;
+    padding: 30px 20px 0 20px;
+  }
+  #contact .social a {
+    display: block;
+    padding-left: 40px;
+  }
+  #contact li {
+    margin: 0 0 20px 0;
+  }
+  #contact li .twitter {
+    background: url('/img/twitter.png') center left no-repeat;
+  }
+  #contact li .facebook {
+    background: url('/img/facebook.png') center left no-repeat;
+  }
+  #contact li .mail {
+    background: url('/img/kerning.png') center left no-repeat;
+  }
 }
-body #wrapper #contact h4 {
-  width: 62px;
-  height: 58px;
-  margin: 32px auto 16px auto;
-  display: block;
-  background: url('../img/twitter_ico.png') center center no-repeat;
-  border-bottom: 1px solid #ed513b;
+@media screen and (min-width: 769px) {
+  #what h2 {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 27px;
+    line-height: 1em;
+  }
+  #what h2 b {
+    font-size: 28px;
+    line-height: 25px;
+  }
+  #what .short {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    margin-left: 25%;
+  }
+  #what .abstract p.col {
+    display: inline;
+    float: left;
+    width: 33.33333333333333%;
+    margin: 0 0%;
+  }
+  #subscription-box {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 ;
+    margin-left: 16.666666666666664%;
+  }
+  #subscription-box input[type=email] {
+    font-family: PlutoSansLight, sans-serif;
+    font-size: 20px;
+    line-height: 1.5em;
+  }
+  #subscription-box input[type=submit] {
+    font-family: PlutoSansBold, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+  #speakers-list li {
+    max-width: 324px;
+    padding: 0 40px;
+  }
+  #location-abstract {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 ;
+    margin-left: 16.666666666666664%;
+  }
+  #location-abstract .col {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+    text-align: left;
+    padding: 0 10px;
+  }
+  #venue-abstract {
+    display: inline;
+    float: left;
+    width: 83.33333333333334%;
+    margin: 0 ;
+    margin-left: 8.333333333333332%;
+  }
+  #venue-abstract .col {
+    display: inline;
+    float: left;
+    width: 41.66666666666667%;
+    margin: 0 ;
+    margin: 0 0 40px 0;
+  }
+  #venue-abstract .col:first-child {
+    display: inline;
+    float: left;
+    width: 33.33333333333333%;
+    margin: 0 ;
+  }
+  #venue-abstract .col:last-child {
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 0 ;
+  }
+  #venue-abstract .col:first-child {
+    text-align: center;
+  }
+  #venue-abstract .col:first-child img {
+    width: 90%;
+  }
+  #contact .col {
+    display: inline;
+    float: left;
+    width: 25%;
+    margin: 0 ;
+  }
 }
-body #wrapper #contact h4:hover {
-  opacity: 0.8;
+/*
+
+
+#venue {
+	.wholecolumn(12);
+	position: relative;
+	min-height: 200px;
+	background-color: @venue;
+	&:after {
+		width:100%;
+		position:absolute;
+		z-index: 100;
+		top:-69px;
+		left:0;
+		right:0;
+		height: auto;
+		min-height:69px;
+		content:'';
+		background: url("../img/bg-venue.png") left no-repeat;	
+		background-size: 100% 100%;
+	}
+	
 }
-body #wrapper #contact h4 span {
-  display: none;
+#tickets {
+	.wholecolumn(12);
+	position: relative;
+	min-height: 200px;
+	background-color: @tickets;
+	&:before {
+		width:100%;
+		position:absolute;
+		z-index: 100;
+		bottom:-60px;
+		left:0;
+		right:0;
+		height: auto;
+		min-height:60px;
+		content:'';
+		background: url("../img/bg-opening.png") left no-repeat;	
+		background-size: 100% 100%;
+	}
+	&:after {
+		width:100%;
+		position:absolute;
+		z-index: 100;
+		top:-36px;
+		left:0;
+		right:0;
+		height: auto;
+		min-height:36px;
+		content:'';
+		background: url("../img/bg-tickets.png") left no-repeat;	
+		background-size: 100% 100%;
+	}
+}
+#sponsors {
+	.wholecolumn(12);
+	position: relative;
+	min-height: 200px;
+	background-color: @sponsors;
+	&:after {
+		width:100%;
+		position:absolute;
+		z-index: 100;
+		bottom:-43px;
+		left:0;
+		right:0;
+		height: auto;
+		min-height:43px;
+		content:'';
+		background: url("../img/bg-sponsor.png") left no-repeat;	
+		background-size: 100% 100%;
+	}
+}
+#contact {
+	.wholecolumn(12);
+	position: relative;
+	min-height: 200px;
+	background-color: @contact;
+	
 }
 
-#who h3 a {
-  color: #231f20;
-  text-decoration: none;
+#ribbon{
+	margin: 0 auto;
+	width:168px;
+	height:156px;
+	background: @beige;
+
+	span {
+		display: block;
+		width:62px;
+		&#where{
+			margin:auto;
+			padding: 26px 0 10px 0;
+			.bold(14px,1em);
+			border-bottom: 1px solid @orange;
+			text-align: center;
+			i {
+				.light(16px,1em);
+				display: block;
+				letter-spacing: 3px;
+			}
+		}
+		&#season{
+			margin:auto;
+			padding: 10px 0 0px 0;
+			.bold(14px,24px);
+
+		}
+		&#year{
+			margin:auto;
+			padding: 0px 0 13px 0;
+			.bold(25px,25px);
+		}
+	}
 }
 
-body #wrapper #contact a {
-  font-family: PlutoSansBold, sans-serif;
-  font-size: 15px;
-  line-height: 1.5em;
-  color: #231f20;
-  text-decoration: none;
+#what{
+	h1 {
+		margin: auto;
+		display: block;
+		width:100%;
+		max-height:113px;
+		height: 113px;
+		background: url('../img/logo_ke.png') center bottom no-repeat;
+		background-size: contain;
+		span {
+			display: none;
+		}
+	}
+	h2 {
+		padding-top: 20px;
+		.light(16px,1em);
+		color:@white;
+		letter-spacing: 1px;
+		//white-space: nowrap;
+		b {color:@black;font-size: 16px;line-height: 16px}
+	}
+	.short {
+		.wholecolumn(12);
+		text-align: left;
+		color: @white;
+		text-transform: none;
+		.serif-light(16px);
+
+
+	}
+	.abstract {
+		.wholecolumn(12);
+		padding: 30px 0;
+	
+		p.col {
+			//border: 1px solid @white;
+			.wholecolumn(12);
+			.light(14px);
+			
+			text-align: left;
+			text-transform: none;
+			padding: 0 10px;
+		}
+
+	}
 }
-body #wrapper #contact a:hover, #who h3 a {
-  border-bottom: 1px solid #231f20;
+
+@media screen and (min-width:550px) 	{
+	#what{
+		padding:23px 0 0;
+		h2 {
+			.light(21px,1em);
+			b {font-size: 21px;line-height: 19px}
+		}
+		.short {
+			.wholecolumn(8);
+			.push(2);
+			text-align: center;
+			color: @white;
+			text-transform: none;
+			.serif-light(16px);
+			
+
+		}
+		.abstract {
+		.wholecolumn(12);
+		margin: 15px 0;
+	
+		p.col {
+			.column(6);
+			.light(14px);
+			
+			text-align: justify;
+		}
+
+	}
+	}
 }
+
+@media screen and (min-width:768px) 	{
+	.grid{
+		margin: 0 20%;
+	}
+	#what{
+		text-align: center;
+		padding:63px 0 0;
+		h2 {
+			.light(27px,1em);
+			b {font-size: 28px;line-height: 25px}
+		}
+		.short {
+			.wholecolumn(6);
+			.push(3);
+			text-align: center;
+			color: @white;
+			text-transform: none;
+			.serif-light(16px);
+
+		}
+		.abstract {
+			p.col {
+				.column(4);
+				padding: 0 10px;
+				.light(14px);
+				
+				text-align: justify;
+			}
+		}
+		
+	}
+}
+
+*/
