@@ -246,11 +246,30 @@ body .grid {
   background: url("../img/bg-opening.png") center left no-repeat;
   background-size: cover;
 }
+/*
 #calling {
+	h2 {
+		color: @white;
+		font-size: 21px;
+		text-transform: uppercase;
+		padding-bottom: 0;
+		background: none;
+		margin: 0 0 20px 0;
+	}
+	background-color: @calling;
+	padding: 80px 0 30px 0;
+	&:after {
+		bottom:-24px;
+		min-height:24px;
+		background: url("../img/bg-ml.png") center left no-repeat;	
+	}
+}
+*/
+#tickets {
   background-color: #302c2d;
   padding: 80px 0 30px 0;
 }
-#calling h2 {
+#tickets h2 {
   color: #ffffff;
   font-size: 21px;
   text-transform: uppercase;
@@ -258,10 +277,27 @@ body .grid {
   background: none;
   margin: 0 0 20px 0;
 }
-#calling:after {
+#tickets:after {
   bottom: -24px;
   min-height: 24px;
   background: url("../img/bg-ml.png") center left no-repeat;
+}
+#tickets #eventbrite-link {
+  display: inline-block;
+  background: #f8f7f4;
+  padding: 10px 20px;
+  color: #302c2d;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+#tickets #eventbrite-link:hover {
+  background: #302c2d;
+  color: #f8f7f4;
+}
+#tickets #eventbrite-iframe {
+  display: none;
 }
 #speakers {
   background-color: #f8f7f4;
@@ -302,43 +338,63 @@ body .grid {
   background: url("../img/bg-venue.png") center left no-repeat;
   background-size: 100% 100%;
 }
-#tickets {
+#calling {
   padding: 20px 0;
   min-height: 200px;
   background-color: #e34e35;
 }
-#tickets h2 {
+#calling h2 {
   color: #ffffff;
 }
-#tickets:after {
+#calling:after {
   bottom: -60px;
   min-height: 60px;
   background: url("../img/bg-opening.png") center left no-repeat;
   background-size: 100% 100%;
 }
-#tickets:before {
+#calling:before {
   top: -36px;
   min-height: 36px;
   background: url("../img/bg-tickets.png") center left no-repeat;
   background-size: 100% 100%;
 }
-#tickets #eventbrite-link {
-  display: inline-block;
-  background: #f8f7f4;
-  padding: 10px 20px;
-  color: #302c2d;
-  font-family: PlutoSansBold, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-decoration: none;
+/*
+#tickets {
+	padding:20px 0;
+	min-height: 200px;
+	background-color: @tickets;
+	h2 {
+		color: @white;
+	}
+	&:after {
+		bottom:-60px;
+		min-height:60px;
+		background: url("../img/bg-opening.png") center left no-repeat;	
+		background-size: 100% 100%;
+	}
+	&:before {
+		top:-36px;
+		min-height:36px;
+		background: url("../img/bg-tickets.png") center left no-repeat;	
+		background-size: 100% 100%;
+	}
+	#eventbrite-link {
+		display: inline-block;
+		background: @beige;
+		&:hover {
+			background: @brown;
+			color: @beige;
+		}
+		padding: 10px 20px;
+		color: @brown;
+		.bold();
+		text-decoration: none;
+	}
+	#eventbrite-iframe {
+		display: none;
+	}
 }
-#tickets #eventbrite-link:hover {
-  background: #302c2d;
-  color: #f8f7f4;
-}
-#tickets #eventbrite-iframe {
-  display: none;
-}
+*/
 #sponsors {
   padding: 60px 0 30px 0;
   min-height: 200px;
