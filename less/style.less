@@ -73,6 +73,14 @@
   	line-height:@lh; 
 }
 
+a {
+	color: @orange;
+	text-decoration: none;
+	&:hover{
+		color:@brown;
+	}
+}
+
 b {
 	.bold();
 }
@@ -279,7 +287,9 @@ body {
 	a {
 		color: @white;
 		text-decoration: none;
-
+		&:hover{
+			color: lighten(@black,30);
+		}
 	}
 
 	.social {
@@ -441,6 +451,9 @@ body {
 		a {
 			color: @orange;
 			text-decoration: none;
+			&:hover{
+				color: @brown;
+			}
 		}
 		&:first-child {
 			text-align:center;
@@ -556,6 +569,8 @@ body {
 			text-align: left;
 			padding: 0 10px;
 		}
+
+
 
 	}
 
