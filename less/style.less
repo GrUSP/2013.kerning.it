@@ -147,58 +147,30 @@ body {
 		background-size: cover;	
 	}
 }
-/*
-#calling {
-	h2 {
-		color: @white;
-		font-size: 21px;
-		text-transform: uppercase;
-		padding-bottom: 0;
-		background: none;
-		margin: 0 0 20px 0;
-	}
-	background-color: @calling;
-	padding: 80px 0 30px 0;
-	&:after {
-		bottom:-24px;
-		min-height:24px;
-		background: url("../img/bg-ml.png") center left no-repeat;	
-	}
-}
-*/
 
-#tickets {
+#calling {
+	padding:100px 0 20px 0;
+	min-height: 200px;
+	background-color: @calling;
 	h2 {
 		color: @white;
-		font-size: 21px;
-		text-transform: uppercase;
-		padding-bottom: 0;
-		background: none;
-		margin: 0 0 20px 0;
 	}
-	background-color: @calling;
-	padding: 80px 0 30px 0;
+	
 	&:after {
 		bottom:-24px;
 		min-height:24px;
 		background: url("../img/bg-ml.png") center left no-repeat;	
+		background-size: 100% 100%;
 	}
-	#eventbrite-link {
-		display: inline-block;
-		background: @beige;
-		&:hover {
-			background: @brown;
-			color: @beige;
-		}
-		padding: 10px 20px;
-		color: @brown;
-		.bold();
-		text-decoration: none;
+	&:before {
+		top:-36px;
+		min-height:36px;
+		background: url("../img/bg-tickets.png") center left no-repeat;	
+		background-size: 100% 100%;
 	}
-	#eventbrite-iframe {
-		display: none;
-	}
+	
 }
+
 #speakers {
 	background-color: @speakers;
 	padding: 40px 0 0 0;
@@ -238,47 +210,24 @@ body {
 	}
 }
 
-#calling {
-	padding:100px 0 20px 0;
-	min-height: 200px;
-	background-color: @calling;
+
+#tickets {
 	h2 {
 		color: @white;
+		font-size: 21px;
+		text-transform: uppercase;
+		padding-bottom: 0;
+		background: none;
+		margin: 0 0 20px 0;
 	}
+	background-color: @calling;
+	padding: 80px 0 30px 0;
 	&:after {
 		bottom:-24px;
 		min-height:24px;
 		background: url("../img/bg-ml.png") center left no-repeat;	
-		background-size: 100% 100%;
-	}
-	&:before {
-		top:-36px;
-		min-height:36px;
-		background: url("../img/bg-tickets.png") center left no-repeat;	
-		background-size: 100% 100%;
 	}
 	
-}
-/*
-#tickets {
-	padding:20px 0;
-	min-height: 200px;
-	background-color: @tickets;
-	h2 {
-		color: @white;
-	}
-	&:after {
-		bottom:-60px;
-		min-height:60px;
-		background: url("../img/bg-opening.png") center left no-repeat;	
-		background-size: 100% 100%;
-	}
-	&:before {
-		top:-36px;
-		min-height:36px;
-		background: url("../img/bg-tickets.png") center left no-repeat;	
-		background-size: 100% 100%;
-	}
 	#eventbrite-link {
 		display: inline-block;
 		background: @beige;
@@ -295,29 +244,72 @@ body {
 		display: none;
 	}
 }
-*/
+
+
+
+
+
+
+
+
 #sponsors {
 	padding:60px 0 30px 0;
 	min-height: 200px;
-	background-color: @sponsors;
-	&:after {
+	background-color: @white;
+	/*&:after {
 		bottom:-43px;
 		min-height:43px;
 		background: url("../img/bg-sponsor.png") left no-repeat;	
 		background-size: 100% 100%;
+	}*/
+	
+	h3.greatprimer {
+		.bold();
+		text-transform: uppercase;
+		clear: both;
 	}
 
-	a {
-		display: inline-block;
-		background: @brown;
-		&:hover {
-			background: @orange;
-		}
-		padding: 10px 20px;
-		color: @white;
+	h3.pica {
 		.bold();
-		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 14px;
+		clear: both;
 	}
+
+	h3.bourgeois {
+		.light();
+		text-transform: uppercase;
+		font-size: 14px;
+		clear: both;
+	}
+
+	h3.minion {
+		.light();
+		text-transform: uppercase;
+		font-size: 12px;
+		clear: both;
+	}
+
+	.sponsor-block {
+		img {padding:5px 10px;}
+		margin: 15px 0;
+		&.great {
+			.column(12);
+			img {
+				width: 100%;
+			}
+		}
+		
+	}
+
+	.become-sponsor{
+		.serif-light();
+		color: @brown;
+		a {
+			color: @orange;
+		}
+	}
+	
 
 }
 #contact {
@@ -651,6 +643,23 @@ body {
 		}
 	}
 
+
+	#sponsors {
+
+		.sponsor-block {
+		
+			margin: 15px 0;
+			&.great {
+				.column(8);
+				.push(2);
+				img {
+					width: 100%;
+				}
+			}	
+		}
+}
+
+
 	#contact {
 		.col {
 			.wholecolumn(6);
@@ -749,6 +758,21 @@ body {
 			}
 		}
 	}
+	
+	#sponsors {
+		.sponsor-block {
+
+			margin: 15px 0;
+			&.great {
+				.column(6);
+				.push(3);
+				img {
+					width: 100%;
+				}
+			}
+			
+		}
+	}
 
 	#contact {
 		.col {
@@ -758,233 +782,3 @@ body {
 
 }
 
-/*
-
-
-#venue {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @venue;
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		top:-69px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:69px;
-		content:'';
-		background: url("../img/bg-venue.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-	
-}
-#tickets {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @tickets;
-	&:before {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		bottom:-60px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:60px;
-		content:'';
-		background: url("../img/bg-opening.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		top:-36px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:36px;
-		content:'';
-		background: url("../img/bg-tickets.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-}
-#sponsors {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @sponsors;
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		bottom:-43px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:43px;
-		content:'';
-		background: url("../img/bg-sponsor.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-}
-#contact {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @contact;
-	
-}
-
-#ribbon{
-	margin: 0 auto;
-	width:168px;
-	height:156px;
-	background: @beige;
-
-	span {
-		display: block;
-		width:62px;
-		&#where{
-			margin:auto;
-			padding: 26px 0 10px 0;
-			.bold(14px,1em);
-			border-bottom: 1px solid @orange;
-			text-align: center;
-			i {
-				.light(16px,1em);
-				display: block;
-				letter-spacing: 3px;
-			}
-		}
-		&#season{
-			margin:auto;
-			padding: 10px 0 0px 0;
-			.bold(14px,24px);
-
-		}
-		&#year{
-			margin:auto;
-			padding: 0px 0 13px 0;
-			.bold(25px,25px);
-		}
-	}
-}
-
-#what{
-	h1 {
-		margin: auto;
-		display: block;
-		width:100%;
-		max-height:113px;
-		height: 113px;
-		background: url('../img/logo_ke.png') center bottom no-repeat;
-		background-size: contain;
-		span {
-			display: none;
-		}
-	}
-	h2 {
-		padding-top: 20px;
-		.light(16px,1em);
-		color:@white;
-		letter-spacing: 1px;
-		//white-space: nowrap;
-		b {color:@black;font-size: 16px;line-height: 16px}
-	}
-	.short {
-		.wholecolumn(12);
-		text-align: left;
-		color: @white;
-		text-transform: none;
-		.serif-light(16px);
-
-
-	}
-	.abstract {
-		.wholecolumn(12);
-		padding: 30px 0;
-	
-		p.col {
-			//border: 1px solid @white;
-			.wholecolumn(12);
-			.light(14px);
-			
-			text-align: left;
-			text-transform: none;
-			padding: 0 10px;
-		}
-
-	}
-}
-
-@media screen and (min-width:550px) 	{
-	#what{
-		padding:23px 0 0;
-		h2 {
-			.light(21px,1em);
-			b {font-size: 21px;line-height: 19px}
-		}
-		.short {
-			.wholecolumn(8);
-			.push(2);
-			text-align: center;
-			color: @white;
-			text-transform: none;
-			.serif-light(16px);
-			
-
-		}
-		.abstract {
-		.wholecolumn(12);
-		margin: 15px 0;
-	
-		p.col {
-			.column(6);
-			.light(14px);
-			
-			text-align: justify;
-		}
-
-	}
-	}
-}
-
-@media screen and (min-width:768px) 	{
-	.grid{
-		margin: 0 20%;
-	}
-	#what{
-		text-align: center;
-		padding:63px 0 0;
-		h2 {
-			.light(27px,1em);
-			b {font-size: 28px;line-height: 25px}
-		}
-		.short {
-			.wholecolumn(6);
-			.push(3);
-			text-align: center;
-			color: @white;
-			text-transform: none;
-			.serif-light(16px);
-
-		}
-		.abstract {
-			p.col {
-				.column(4);
-				padding: 0 10px;
-				.light(14px);
-				
-				text-align: justify;
-			}
-		}
-		
-	}
-}
-
-*/

@@ -246,58 +246,25 @@ body .grid {
   background: url("../img/bg-opening.png") center left no-repeat;
   background-size: cover;
 }
-/*
 #calling {
-	h2 {
-		color: @white;
-		font-size: 21px;
-		text-transform: uppercase;
-		padding-bottom: 0;
-		background: none;
-		margin: 0 0 20px 0;
-	}
-	background-color: @calling;
-	padding: 80px 0 30px 0;
-	&:after {
-		bottom:-24px;
-		min-height:24px;
-		background: url("../img/bg-ml.png") center left no-repeat;	
-	}
-}
-*/
-#tickets {
+  padding: 100px 0 20px 0;
+  min-height: 200px;
   background-color: #302c2d;
-  padding: 80px 0 30px 0;
 }
-#tickets h2 {
+#calling h2 {
   color: #ffffff;
-  font-size: 21px;
-  text-transform: uppercase;
-  padding-bottom: 0;
-  background: none;
-  margin: 0 0 20px 0;
 }
-#tickets:after {
+#calling:after {
   bottom: -24px;
   min-height: 24px;
   background: url("../img/bg-ml.png") center left no-repeat;
+  background-size: 100% 100%;
 }
-#tickets #eventbrite-link {
-  display: inline-block;
-  background: #f8f7f4;
-  padding: 10px 20px;
-  color: #302c2d;
-  font-family: PlutoSansBold, sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
-  text-decoration: none;
-}
-#tickets #eventbrite-link:hover {
-  background: #302c2d;
-  color: #f8f7f4;
-}
-#tickets #eventbrite-iframe {
-  display: none;
+#calling:before {
+  top: -36px;
+  min-height: 36px;
+  background: url("../img/bg-tickets.png") center left no-repeat;
+  background-size: 100% 100%;
 }
 #speakers {
   background-color: #f8f7f4;
@@ -338,86 +305,107 @@ body .grid {
   background: url("../img/bg-venue.png") center left no-repeat;
   background-size: 100% 100%;
 }
-#calling {
-  padding: 100px 0 20px 0;
-  min-height: 200px;
+#tickets {
   background-color: #302c2d;
+  padding: 80px 0 30px 0;
 }
-#calling h2 {
+#tickets h2 {
   color: #ffffff;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding-bottom: 0;
+  background: none;
+  margin: 0 0 20px 0;
 }
-#calling:after {
+#tickets:after {
   bottom: -24px;
   min-height: 24px;
   background: url("../img/bg-ml.png") center left no-repeat;
-  background-size: 100% 100%;
 }
-#calling:before {
-  top: -36px;
-  min-height: 36px;
-  background: url("../img/bg-tickets.png") center left no-repeat;
-  background-size: 100% 100%;
-}
-/*
-#tickets {
-	padding:20px 0;
-	min-height: 200px;
-	background-color: @tickets;
-	h2 {
-		color: @white;
-	}
-	&:after {
-		bottom:-60px;
-		min-height:60px;
-		background: url("../img/bg-opening.png") center left no-repeat;	
-		background-size: 100% 100%;
-	}
-	&:before {
-		top:-36px;
-		min-height:36px;
-		background: url("../img/bg-tickets.png") center left no-repeat;	
-		background-size: 100% 100%;
-	}
-	#eventbrite-link {
-		display: inline-block;
-		background: @beige;
-		&:hover {
-			background: @brown;
-			color: @beige;
-		}
-		padding: 10px 20px;
-		color: @brown;
-		.bold();
-		text-decoration: none;
-	}
-	#eventbrite-iframe {
-		display: none;
-	}
-}
-*/
-#sponsors {
-  padding: 60px 0 30px 0;
-  min-height: 200px;
-  background-color: #e5e3de;
-}
-#sponsors:after {
-  bottom: -43px;
-  min-height: 43px;
-  background: url("../img/bg-sponsor.png") left no-repeat;
-  background-size: 100% 100%;
-}
-#sponsors a {
+#tickets #eventbrite-link {
   display: inline-block;
-  background: #302c2d;
+  background: #f8f7f4;
   padding: 10px 20px;
-  color: #ffffff;
+  color: #302c2d;
   font-family: PlutoSansBold, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   text-decoration: none;
 }
-#sponsors a:hover {
-  background: #e34e35;
+#tickets #eventbrite-link:hover {
+  background: #302c2d;
+  color: #f8f7f4;
+}
+#tickets #eventbrite-iframe {
+  display: none;
+}
+#sponsors {
+  padding: 60px 0 30px 0;
+  min-height: 200px;
+  background-color: #ffffff;
+  /*&:after {
+		bottom:-43px;
+		min-height:43px;
+		background: url("../img/bg-sponsor.png") left no-repeat;	
+		background-size: 100% 100%;
+	}*/
+
+}
+#sponsors h3.greatprimer {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  clear: both;
+}
+#sponsors h3.pica {
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+  clear: both;
+}
+#sponsors h3.bourgeois {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 14px;
+  clear: both;
+}
+#sponsors h3.minion {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 12px;
+  clear: both;
+}
+#sponsors .sponsor-block {
+  margin: 15px 0;
+}
+#sponsors .sponsor-block img {
+  padding: 5px 10px;
+}
+#sponsors .sponsor-block.great {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 0%;
+}
+#sponsors .sponsor-block.great img {
+  width: 100%;
+}
+#sponsors .become-sponsor {
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #302c2d;
+}
+#sponsors .become-sponsor a {
+  color: #e34e35;
 }
 #contact {
   padding: 60px 0 30px 0;
@@ -783,6 +771,19 @@ body .grid {
   #tickets #eventbrite-iframe {
     display: block;
   }
+  #sponsors .sponsor-block {
+    margin: 15px 0;
+  }
+  #sponsors .sponsor-block.great {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 0%;
+    margin-left: 16.666666666666664%;
+  }
+  #sponsors .sponsor-block.great img {
+    width: 100%;
+  }
   #contact .col {
     display: inline;
     float: left;
@@ -899,6 +900,19 @@ body .grid {
   #venue-abstract .col:first-child img {
     width: 90%;
   }
+  #sponsors .sponsor-block {
+    margin: 15px 0;
+  }
+  #sponsors .sponsor-block.great {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 0%;
+    margin-left: 25%;
+  }
+  #sponsors .sponsor-block.great img {
+    width: 100%;
+  }
   #contact .col {
     display: inline;
     float: left;
@@ -906,233 +920,3 @@ body .grid {
     margin: 0 ;
   }
 }
-/*
-
-
-#venue {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @venue;
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		top:-69px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:69px;
-		content:'';
-		background: url("../img/bg-venue.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-	
-}
-#tickets {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @tickets;
-	&:before {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		bottom:-60px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:60px;
-		content:'';
-		background: url("../img/bg-opening.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		top:-36px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:36px;
-		content:'';
-		background: url("../img/bg-tickets.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-}
-#sponsors {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @sponsors;
-	&:after {
-		width:100%;
-		position:absolute;
-		z-index: 100;
-		bottom:-43px;
-		left:0;
-		right:0;
-		height: auto;
-		min-height:43px;
-		content:'';
-		background: url("../img/bg-sponsor.png") left no-repeat;	
-		background-size: 100% 100%;
-	}
-}
-#contact {
-	.wholecolumn(12);
-	position: relative;
-	min-height: 200px;
-	background-color: @contact;
-	
-}
-
-#ribbon{
-	margin: 0 auto;
-	width:168px;
-	height:156px;
-	background: @beige;
-
-	span {
-		display: block;
-		width:62px;
-		&#where{
-			margin:auto;
-			padding: 26px 0 10px 0;
-			.bold(14px,1em);
-			border-bottom: 1px solid @orange;
-			text-align: center;
-			i {
-				.light(16px,1em);
-				display: block;
-				letter-spacing: 3px;
-			}
-		}
-		&#season{
-			margin:auto;
-			padding: 10px 0 0px 0;
-			.bold(14px,24px);
-
-		}
-		&#year{
-			margin:auto;
-			padding: 0px 0 13px 0;
-			.bold(25px,25px);
-		}
-	}
-}
-
-#what{
-	h1 {
-		margin: auto;
-		display: block;
-		width:100%;
-		max-height:113px;
-		height: 113px;
-		background: url('../img/logo_ke.png') center bottom no-repeat;
-		background-size: contain;
-		span {
-			display: none;
-		}
-	}
-	h2 {
-		padding-top: 20px;
-		.light(16px,1em);
-		color:@white;
-		letter-spacing: 1px;
-		//white-space: nowrap;
-		b {color:@black;font-size: 16px;line-height: 16px}
-	}
-	.short {
-		.wholecolumn(12);
-		text-align: left;
-		color: @white;
-		text-transform: none;
-		.serif-light(16px);
-
-
-	}
-	.abstract {
-		.wholecolumn(12);
-		padding: 30px 0;
-	
-		p.col {
-			//border: 1px solid @white;
-			.wholecolumn(12);
-			.light(14px);
-			
-			text-align: left;
-			text-transform: none;
-			padding: 0 10px;
-		}
-
-	}
-}
-
-@media screen and (min-width:550px) 	{
-	#what{
-		padding:23px 0 0;
-		h2 {
-			.light(21px,1em);
-			b {font-size: 21px;line-height: 19px}
-		}
-		.short {
-			.wholecolumn(8);
-			.push(2);
-			text-align: center;
-			color: @white;
-			text-transform: none;
-			.serif-light(16px);
-			
-
-		}
-		.abstract {
-		.wholecolumn(12);
-		margin: 15px 0;
-	
-		p.col {
-			.column(6);
-			.light(14px);
-			
-			text-align: justify;
-		}
-
-	}
-	}
-}
-
-@media screen and (min-width:768px) 	{
-	.grid{
-		margin: 0 20%;
-	}
-	#what{
-		text-align: center;
-		padding:63px 0 0;
-		h2 {
-			.light(27px,1em);
-			b {font-size: 28px;line-height: 25px}
-		}
-		.short {
-			.wholecolumn(6);
-			.push(3);
-			text-align: center;
-			color: @white;
-			text-transform: none;
-			.serif-light(16px);
-
-		}
-		.abstract {
-			p.col {
-				.column(4);
-				padding: 0 10px;
-				.light(14px);
-				
-				text-align: justify;
-			}
-		}
-		
-	}
-}
-
-*/
