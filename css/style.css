@@ -420,6 +420,9 @@ body .grid {
   background: url("../img/bg-venue.png") center left no-repeat;
   background-size: 100% 100%;
 }
+#venue img {
+  width: 100%;
+}
 #tickets {
   background-color: #302c2d;
   padding: 80px 0 30px 0;
@@ -509,7 +512,7 @@ body .grid {
   width: 100%;
   margin: 0 0%;
 }
-#sponsors .sponsor-block.great img {
+#sponsors .sponsor-block img {
   width: 100%;
 }
 #sponsors .become-sponsor {
