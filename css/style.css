@@ -900,7 +900,16 @@ body .grid {
     margin-left: 16.666666666666664%;
   }
   #sponsors .sponsor-block.great img {
-    width: 100%;
+    max-width: 405px;
+  }
+  #sponsors .sponsor-block.pica img {
+    max-width: 320px;
+  }
+  #sponsors .sponsor-block.bourgeois img {
+    max-width: 235px;
+  }
+  #sponsors .sponsor-block.minion img {
+    max-width: 183px;
   }
   #contact .col {
     display: inline;
