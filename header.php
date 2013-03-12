@@ -4,7 +4,7 @@
 		<a class="toggleMenu" href="#">Menu</a>
 		<div id="nav-primary">
 			<ul>
-				<li><a href="speakers.php">Speakers</a></li>
+				<li><a href="speakers.php">Conference</a></li>
 				<li><a href="workshops.php">Workshops</a></li>
 				<li><a href="location.php">Location &amp; Venue</a></li>	
 				<li><a href="#tickets" class="scroll">Register</a></li>		
