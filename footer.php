@@ -29,6 +29,24 @@
     $("#nav-primary").toggleClass('hover');
   });
 
+  $("#nav-primary li a").click(function(){
+    $("#nav-primary").toggleClass('hover');
+  });
+
+var num = 0; //number of pixels before modifying styles
+
+$(window).bind('scroll resize', function() {
+    if ($(window).scrollTop() > num) {
+        $('#header').addClass('fixed');
+        $('#header').css({
+          width:$('body').width()
+        })
+    }
+    else {
+        $('#header').removeClass('fixed');
+    }
+});
+
 	</script>
 
 	<!--[if lt IE 7 ]>
