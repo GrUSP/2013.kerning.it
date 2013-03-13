@@ -6,7 +6,7 @@
 				
 				<?php include 'workshops/workshop-standardistas.php'; ?>
 				<?php include 'workshops/workshop-dugonijc.php'; ?>
-				<?php include 'workshops/workshop-tastemeat.php'; ?>
+
 
 		</div>
 	</div>

@@ -11,8 +11,7 @@
 				<?php include 'talks/talk-marko.php'; ?>
 				<?php include 'talks/talk-yves.php'; ?>
 				<?php include 'talks/talk-standardistas.php'; ?>
-				<?php include 'talks/talk-placeholder.php'; ?>
-				<?php include 'talks/talk-placeholder.php'; ?>
+				
 
 			</div>
 		</div>
