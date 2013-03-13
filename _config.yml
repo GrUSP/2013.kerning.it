@@ -4,4 +4,4 @@ server_port: 4000
 baseurl: /
 url: http://localhost:4000
 
-ygments: true
+pygments: true
