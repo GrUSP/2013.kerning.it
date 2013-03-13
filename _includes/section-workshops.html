@@ -3,8 +3,37 @@
 		<h2>Workshops</h2>
 		<h3>May 2, 2013</h3>
 		<div id="workshops-abstract">
-            {% for workshop in site.workshops %}				
-                {% include workshop %}
+            {% for post in site.categories['workshop'] %}				
+                
+
+            <div class="session">
+                <div class="speaker">
+                    <div class="image"><img src="img/{{post.img}}"></div>
+                    <div class="info">
+                        <div class="name">{{post.name}}</div>
+                        <div class="twitter"><a
+                                href="http://www.twitter.com/{{post.twitter}}">@{{post.twitter}}</a></div>
+                        <div class="bio"> {{post.bio}}</div>
+                        
+                        <div class="meta first">
+                            <div class="duration">Duration: {{post.duration}} hours</div>
+                                <div class="where">
+                                    <b>Venue: {{post.venue}}</b><br>
+                                    <a class="gmap" href="{{post.gmap}}"></a>
+                                </div>
+                                <div class="buy">
+                                    <a href="#buy-tickets">Get your ticket<b>€275</b></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topic">
+                        <div class="title">{{post.title}}</div>
+                        <div class="abstract">{{post.abstract}}</div>
+                    </div>
+                </div>                      
+            </div>
+
             {% endfor %}
 		</div>
 	</div>
