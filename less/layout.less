@@ -126,7 +126,7 @@ h2 {
 }
 
 #header {
-	
+	//display: none;
 	z-index: 20;
 	//border-top: 10px solid @beige;
 	//border-bottom: 10px solid transparent;
@@ -177,6 +177,7 @@ h2 {
 
 .section {
 	.wholecolumn(12);
+	//display: none;
 	
 }
 
@@ -198,11 +199,17 @@ h2 {
 		text-align: center;
 		margin: 0 auto;
 		&.keynote {
-			.wholecolumn(12);
+			
 			.push(4);
+			padding:0 20px;
+		}
+		&.workshop {
+		
+			.push(4);
+			padding:0 20px;
 		}
 		li {
-			.wholecolumn(4);
+			.wholecolumn(3);
 			//max-width: 284px;
 			margin: 0 auto;
 			display: inline-block;
