@@ -197,12 +197,19 @@ h2 {
 		max-width: 900px;
 		text-align: center;
 		margin: 0 auto;
+		&.keynote {
+			.wholecolumn(12);
+			.push(4);
+		}
 		li {
 			.wholecolumn(4);
 			//max-width: 284px;
 			margin: 0 auto;
 			display: inline-block;
 			padding:0 10px;
+			&:first-of-type {
+				clear:both;
+			}
 		}
 		img {
 			
