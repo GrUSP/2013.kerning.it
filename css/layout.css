@@ -432,6 +432,14 @@ h2 {
   font-size: 12px;
   clear: both;
 }
+#sponsors h3.media {
+  font-family: PlutoSansLight, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  font-size: 12px;
+  clear: both;
+}
 #sponsors .sponsor-block {
   margin: 15px 0;
 }
@@ -992,6 +1000,9 @@ h2 {
   }
   #sponsors .sponsor-block.minion img {
     max-width: 183px;
+  }
+  #sponsors .sponsor-block.media img {
+    max-width: 140px;
   }
   #calling #subscription-box {
     display: inline;
