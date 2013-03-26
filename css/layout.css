@@ -943,6 +943,48 @@ h2 {
   line-height: 1.5em;
   color: #231f20;
 }
+#schedule h2 {
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+#schedule h3 {
+  background: url('/img/filetto.png') bottom center no-repeat;
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-family: PlutoSansBold, sans-serif;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+#schedule .schedule-session {
+  display: inline;
+  float: left;
+  width: 100%;
+  margin: 0 ;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+#schedule .schedule-session .hour {
+  font-family: "adelle", serif;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+#schedule .schedule-session .image {
+  display: none;
+  padding: 0 20px;
+}
+#schedule .schedule-session .image img {
+  width: 100%;
+  max-width: 183px;
+}
+#schedule .schedule-session .topic .title {
+  font-family: "adelle", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5em;
+}
 @media screen and (min-width: 481px) {
   .wrapper {
     display: inline;
@@ -1129,6 +1171,33 @@ h2 {
     width: 100%;
     margin: 0 ;
     padding: 0 20px;
+  }
+  .schedule-session {
+    display: inline;
+    float: left;
+    width: 100%;
+    margin: 0 ;
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .schedule-session .hour {
+    font-family: "adelle", serif;
+    font-weight: 100;
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  .schedule-session .image {
+    padding: 0 20px;
+  }
+  .schedule-session .image img {
+    width: 100%;
+    max-width: 183px;
+  }
+  .schedule-session .topic .title {
+    font-family: "adelle", serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5em;
   }
 }
 @media screen and (min-width: 1024px) {

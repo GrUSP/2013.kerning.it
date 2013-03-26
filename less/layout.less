@@ -769,6 +769,45 @@ h2 {
 
 
 }
+#schedule {
+	h2 {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+	h3 {
+		background: url('/img/filetto.png') bottom center no-repeat;
+		margin: 0 0 20px 0;
+		padding: 0 0 10px 0;
+		.sans-bold(12px);
+		text-transform: uppercase;
+	}
+
+	.schedule-session {
+		
+		.wholecolumn(12);
+		padding: 15px 0;
+		border-bottom: 1px solid @gray; 
+		.hour {
+			.serif-light(24px);
+			//text-align: right;
+		}
+		.image {
+			display: none;
+			padding: 0 20px;
+			img {
+				width: 100%;
+				max-width:183px;
+			}
+		}
+		.topic {
+			.title {
+				.serif-bold(24px);
+			}
+		}
+	}
+}
+
 
 /////////////
 // TABLET  //
@@ -962,7 +1001,27 @@ h2 {
 
 	}
 
-
+	.schedule-session {
+		.wholecolumn(12);
+		padding: 15px 0;
+		border-bottom: 1px solid @gray; 
+		.hour {
+			.serif-light(24px);
+			//text-align: right;
+		}
+		.image {
+			padding: 0 20px;
+			img {
+				width: 100%;
+				max-width:183px;
+			}
+		}
+		.topic {
+			.title {
+				.serif-bold(24px);
+			}
+		}
+	}
 }
 
   ///////////////
@@ -1092,8 +1151,8 @@ h2 {
 
 	#schedule {
 		padding:30px 0 90px 0;
-	background-color: @beige;
-	margin-top: 50px;
+		background-color: @beige;
+		margin-top: 50px;
 	h2 {
 		background: none;
 		padding: 0;
