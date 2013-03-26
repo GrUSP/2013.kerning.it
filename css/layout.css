@@ -1399,7 +1399,7 @@ h2 {
   .session .topic .title {
     min-height: 65px;
   }
-  .schedule-session {
+  #schedule .schedule-session {
     display: inline;
     float: left;
     width: 100%;
@@ -1407,7 +1407,7 @@ h2 {
     padding: 15px 0;
     border-bottom: 1px solid #e5e5e5;
   }
-  .schedule-session .hour {
+  #schedule .schedule-session .hour {
     display: inline;
     float: left;
     width: 16.666666666666664%;
@@ -1417,24 +1417,25 @@ h2 {
     font-size: 24px;
     line-height: 1.5em;
   }
-  .schedule-session .image {
+  #schedule .schedule-session .image {
     display: inline;
     float: left;
     width: 16.666666666666664%;
     margin: 0 0%;
     padding: 0 20px;
   }
-  .schedule-session .image img {
-    width: 100%;
+  #schedule .schedule-session .image img {
+    width: 100%
+  				display: block;
   }
-  .schedule-session .topic {
+  #schedule .schedule-session .topic {
     display: inline;
     float: left;
     width: 66.66666666666666%;
     margin: 0 0%;
     text-align: left;
   }
-  .schedule-session .topic .title {
+  #schedule .schedule-session .topic .title {
     font-family: "adelle", serif;
     font-weight: 700;
     font-size: 24px;
