@@ -530,7 +530,7 @@ h2 {
 #location {
 	padding:30px 0 70px 0;
 	background-color: @location;
-	background: url("../img/bg-location.jpg") center center no-repeat;	
+	//background: url("../img/bg-location.jpg") -200px center no-repeat;
 	background-size: cover;
 	//margin-top: 50px;
 }
@@ -555,6 +555,25 @@ h2 {
 		}
 
 	}
+	h3 {
+			.serif-bold();
+			font-size: 18px;
+			margin: 0 0 20px 0;
+			b {
+				.serif-bold();
+			}
+		}
+		dl {
+			dt {
+				color: @orange;
+				font-size: 18px;
+				text-transform: uppercase;
+
+			}
+			dd {
+				margin-bottom: 20px;
+			}
+		}
 }
 
 
@@ -1102,9 +1121,12 @@ h2 {
 	#location-abstract {
 			.wholecolumn(8);
 			.push(2);
-			padding: 100px 0;
+			padding: 50px 0;
 		.col {
-			.wholecolumn(6);
+			.wholecolumn(4);
+			&:last-child{
+				.column(8);
+			}
 			text-align: left;
 			padding: 0 10px;
 		}

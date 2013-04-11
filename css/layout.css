@@ -663,7 +663,6 @@ h2 {
 #location {
   padding: 30px 0 70px 0;
   background-color: #efeeeb;
-  background: url("../img/bg-location.jpg") center center no-repeat;
   background-size: cover;
 }
 #location-abstract {
@@ -698,6 +697,28 @@ h2 {
   font-weight: 700;
   font-size: 1em;
   line-height: 1.5em;
+}
+#location-abstract h3 {
+  font-family: "adelle", serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin: 0 0 20px 0;
+}
+#location-abstract h3 b {
+  font-family: "adelle", serif;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#location-abstract dl dt {
+  color: #e34e35;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#location-abstract dl dd {
+  margin-bottom: 20px;
 }
 #venue {
   padding: 30px 0;
@@ -1290,15 +1311,21 @@ h2 {
     width: 66.66666666666666%;
     margin: 0 ;
     margin-left: 16.666666666666664%;
-    padding: 100px 0;
+    padding: 50px 0;
   }
   #location-abstract .col {
     display: inline;
     float: left;
-    width: 50%;
+    width: 33.33333333333333%;
     margin: 0 ;
     text-align: left;
     padding: 0 10px;
+  }
+  #location-abstract .col:last-child {
+    display: inline;
+    float: left;
+    width: 66.66666666666666%;
+    margin: 0 0%;
   }
   #venue-abstract {
     display: inline;
