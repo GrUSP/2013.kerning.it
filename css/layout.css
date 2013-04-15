@@ -325,7 +325,7 @@ h2 {
 #speakers #speakers-list li {
   display: inline;
   float: left;
-  width: 33.33333333333333%;
+  width: 50%;
   margin: 0 ;
   margin: 0 auto;
   display: inline-block;
@@ -1029,6 +1029,12 @@ h2 {
     margin: 0 0%;
     padding: 0 5px;
   }
+  #speakers #speakers-list li {
+    display: inline;
+    float: left;
+    width: 50%;
+    margin: 0 ;
+  }
   #tickets .wrapper {
     display: inline;
     float: left;
@@ -1326,6 +1332,12 @@ h2 {
     float: left;
     width: 66.66666666666666%;
     margin: 0 0%;
+  }
+  #speakers #speakers-list li {
+    display: inline;
+    float: left;
+    width: 33.33333333333333%;
+    margin: 0 ;
   }
   #venue-abstract {
     display: inline;
