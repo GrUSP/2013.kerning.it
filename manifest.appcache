@@ -1,33 +1,4 @@
 CACHE MANIFEST
-# 2013-05-02:v1
+# 2013-05-02:v2
 
 # Explicitly cached 'master entries'.
-CACHE:
-index.html
-workshops.html
-location.html
-schedule.html
-speakers.html
-about.html
-css/layout.css?ver=4
-css/humane/libnotify.css
-js/prefixfree.js
-img/lucas.png
-img/rich.png
-img/aral.png
-img/bas.png
-img/nina.png
-img/marko.png
-img/yves.png
-img/standardistas.png
-img/simone.png
-img/pica-typekit.png
-img/pica-myfonts.gif
-img/pica-fontdeck.png
-img/pica-h&fj.png
-img/bourgeois-fontshop.png
-img/bourgeois-mailchimp.png
-img/minion-8faces.png
-img/minion-typetogether.png
-js/bootstrap-tooltip.js
-img/logo_ke.png
